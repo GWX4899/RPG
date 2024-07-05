@@ -1,0 +1,2 @@
+D:\vs C语言\unity\RPG\obj\Debug\Assembly-CSharp.csproj.AssemblyReference.cache
+D:\vs C语言\unity\RPG\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
