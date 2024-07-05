@@ -383,14 +383,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220487487}
-  m_LocalRotation: {x: -0.3254304, y: 0.61981285, z: 0.45681715, w: 0.5488581}
+  m_LocalRotation: {x: -0.6189988, y: 0.1454509, z: 0.7538504, w: 0.16551182}
   m_LocalPosition: {x: 0.1086, y: -0.0486, z: -0.022}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 274432961}
   m_Father: {fileID: 3191567287718173888}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: -67.445, y: 87.033, z: 14.81}
+  m_LocalEulerAnglesHint: {x: -154.9, y: 102.2, z: -4.4}
 --- !u!4 &220872064
 Transform:
   m_ObjectHideFlags: 0
@@ -447,8 +447,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274432960}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.000000019073486, y: 0.000000076293944, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 220487488}
@@ -526,13 +526,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433030906}
-  m_LocalRotation: {x: -0.35553402, y: 0.48108724, z: 0.34700358, w: 0.72231513}
+  m_LocalRotation: {x: -0.69642895, y: 0.19003655, z: 0.593224, w: 0.35631183}
   m_LocalPosition: {x: 0.1086, y: -0.0486, z: -0.022}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3191567287718173888}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -133.8, y: 86.5, z: -13.2}
 --- !u!1 &462573993
 GameObject:
   m_ObjectHideFlags: 0
@@ -11614,7 +11614,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9041881056330733496}
   m_Layer: 0
-  m_Name: Katana_Y
+  m_Name: Sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

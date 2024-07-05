@@ -1,12 +1,18 @@
 ﻿using UnityEngine;
 public class PlayerHealthSystem : CharacterHealthSystemBase
 {
-    
+
     public Transform GSParryTransform;
-    private Transform GSTransform;
+    private Vector3 position;
+    private Vector3 rotation;
+
+    private void Start()
+    {
+        position = _playerMove.GS.transform.localPosition;
+        rotation = _playerMove.GS.transform.localEulerAngles;
+    }
     private void LateUpdate()
     {
-        ResetGSTransform();
         OnHitLockTarget(currentAttacker);
     }
 
@@ -15,6 +21,7 @@ public class PlayerHealthSystem : CharacterHealthSystemBase
         SetAttacker(attacker);
         if (CanParry())
         {
+
             Parry(HitAnimation);
         }
         else
@@ -42,32 +49,41 @@ public class PlayerHealthSystem : CharacterHealthSystemBase
 
     private bool CanParry()
     {
-        //if (_animator.CheckCurrentTagAnimationTimeIsLow("Hit", .1f)) return false;
+        if (_animator.CheckAnimationTag("Parry", 0)) return true;
+        if (_animator.CheckCurrentTagAnimationTimeIsLow("Hit", .11f)) return true;
 
-        return true;
+        return false;
     }
 
     private void Parry(string hitname)
     {
+        //Debug.Log("1");
         if (!CanParry()) return;
+        //Debug.Log(_playerMove.GetCurrentWeapon().name);
         if (_playerMove.GetCurrentWeapon().name == "Sword")
         {
+            //Debug.Log("判断成功");
             switch (hitname)
             {
 
                 case "Hit_LD_Up":
                     _animator.Play("ParryLF", 0, 0);
+                    //Debug.Log("ParryLF");
                     break;
                 case "Hit_RD_Up":
                     _animator.Play("ParryRF", 0, 0);
+                    //Debug.Log("ParryRF");
                     break;
                 case "Hit_Up_Right":
                     _animator.Play("ParryUp", 0, 0);
+                    //Debug.Log("ParryUp");
                     break;
                 case "Hit_H_Right":
                     _animator.Play("ParryR", 0, 0);
+                    //Debug.Log("ParryR");
                     break;
                 default:
+                    //Debug.Log("没有找到播放动画");
                     break;
             }
             GameAssets.Instance.PlaySoundEffect(_audioSource, SoundType.SwordDefend);
@@ -77,23 +93,22 @@ public class PlayerHealthSystem : CharacterHealthSystemBase
             SetGSParryTransform();
             _animator.Play("GSParry", 0, 0);
             GameAssets.Instance.PlaySoundEffect(_audioSource, SoundType.GSwordDefend);
+            //Invoke("ResetGSTransform", 1f);
+            ResetGSTransform();
         }
-
     }
     private void SetGSParryTransform()
     {
-        GSTransform = _playerMove.GS.transform;
+
+        Debug.Log(position + " " + rotation);
         _playerMove.GS.transform.position = GSParryTransform.position;
         _playerMove.GS.transform.rotation = GSParryTransform.rotation;
     }
 
     private void ResetGSTransform()
     {
-        if (_animator.CheckCurrentTagAnimationTimeIsExceed("GSParry", .9f))
-        {
-            _playerMove.GS.transform.position = GSTransform.position;
-            _playerMove.GS.transform.rotation = GSTransform.rotation;
-        }
+        _playerMove.GS.transform.localPosition = position;
+        _playerMove.GS.transform.localEulerAngles = rotation;
     }
     #endregion
 

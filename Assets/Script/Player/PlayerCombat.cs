@@ -18,6 +18,7 @@ public class PlayerCombat : CombatBase
         DetectionTarget();
         UpdateCurrentTarget();
         PlayerAttackAction();
+        PlayerParryInput();
 
     }
 
@@ -76,6 +77,26 @@ public class PlayerCombat : CombatBase
         }
 
     }
+
+    private void PlayerParryInput()
+    {
+        if (CanInputParry())
+        {
+            _animator.SetBool("Guard", Input.GetMouseButton(1));
+        }
+        else
+        {
+            _animator.SetBool("Guard", false);
+        }
+        
+    }
+    private bool CanInputParry()
+    {
+        if (_animator.CheckAnimationTag("Move", 0)) return true;
+        if (_animator.CheckAnimationTag("Parry", 0)) return true;
+        return false;
+    }
+
 
     private void OnAttackActionLockOn()
     {

@@ -436,10 +436,6 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-
-
-
-
     private void DodgeAnimationMove()
     {
         if (anima.CheckAnimationTag("Dodge", 0))
