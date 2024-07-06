@@ -19,3 +19,7 @@ ChangeWeapom动画层:<br/>
 ![image](https://github.com/GWX4899/RPG/blob/main/RPGGif/05bfc4bb-e0dd-475a-89b2-85eff8d7d7ab.png)<br/>
 最终实现:<br/>
 ![image](https://github.com/GWX4899/RPG/blob/main/RPGGif/%E7%A7%BB%E5%8A%A8%E7%8A%B6%E6%80%81%E4%B8%8B%E5%88%87%E6%8D%A2%E6%AD%A6%E5%99%A8%2000_00_00-00_00_30.gif)
+
+【大剑攻击】<br/>
+在手持大剑状态下对敌人进行攻击，敌人的受击动画与普通长剑的不相同，最后一段攻击可以将敌人打倒<br/>
+![image](https://github.com/GWX4899/RPG/blob/main/RPGGif/%E8%A7%86%E8%A7%92%E9%94%81%E5%AE%9A%E4%B8%8B%E7%9A%84%E5%A4%A7%E5%89%91%E6%94%BB%E5%87%BB%2000_00_00-00_00_30.gif)
