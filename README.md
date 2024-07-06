@@ -1,2 +1,5 @@
 一些关于项目的详细介绍
-![image](https://https://github.com/GWX4899/RPG/blob/main/RPGGif/Sword%E6%A0%BC%E6%8C%A1%2000_00_00-00_00_30.gif?raw=true)
+
+【普通武器下的对敌人攻击的格挡】<br/>
+在玩家被攻击后按下鼠标右键依然可以进入格挡模式，并对敌人的攻击进行格挡<br/>且针对敌人攻击的不同方向，武器格挡后剑锋的偏向也有所不同
+![image](https://github.com/GWX4899/RPG/blob/main/RPGGif/Sword%E6%A0%BC%E6%8C%A1%2000_00_00-00_00_30.gif)
