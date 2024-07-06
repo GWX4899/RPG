@@ -6,7 +6,8 @@
 
 【人物移动】<br/>
 对于锁敌视角以及自由视角下的人物移动也做了不同的处理<br/>
-![image](https://github.com/GWX4899/RPG/blob/main/RPGGif/%E8%87%AA%E7%94%B1%E8%A7%86%E8%A7%92%E5%A5%94%E8%B7%91%2000_00_00-00_00_30.gif)
+![image](https://github.com/GWX4899/RPG/blob/main/RPGGif/%E8%87%AA%E7%94%B1%E8%A7%86%E8%A7%92%E5%A5%94%E8%B7%91%2000_00_00-00_00_30.gif)<br/>
+![image](https://github.com/GWX4899/RPG/blob/main/RPGGif/%E8%A7%86%E8%A7%92%E9%94%81%E5%AE%9A%E4%B8%8B%E7%9A%84%E5%A5%94%E8%B7%91%2000_00_00-00_00_30.gif)
 
 
 【普通武器下的对敌人攻击的格挡】<br/>
