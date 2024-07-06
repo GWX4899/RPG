@@ -14,4 +14,8 @@
 【移动状态下切换武器】<br/>
 由于所给资源中并没有移动切换武器的动画，故使用AnimationLayer以及AvatarMask对人物移动时切换武器进行动画组合处理<br/>
 将切换武器的动画单独作为一个层级，并新建一个Avatar选取上半身的IK点，放入Mask中，Blending设置为Override<br/>
+![image](https://github.com/GWX4899/RPG/blob/main/RPGGif/ba730883-533e-4d2c-b20c-b86cc2228057.png)<br/>
+ChangeWeapom动画层:<br/>
+![image](https://github.com/GWX4899/RPG/blob/main/RPGGif/05bfc4bb-e0dd-475a-89b2-85eff8d7d7ab.png)<br/>
+最终实现:<br/>
 ![image](https://github.com/GWX4899/RPG/blob/main/RPGGif/%E7%A7%BB%E5%8A%A8%E7%8A%B6%E6%80%81%E4%B8%8B%E5%88%87%E6%8D%A2%E6%AD%A6%E5%99%A8%2000_00_00-00_00_30.gif)
